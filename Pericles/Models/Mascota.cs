@@ -28,6 +28,8 @@ namespace Pericles.Models
         [Display(Name = "Dueño")]
         public int DuenioID { get; set; }
 
+        [Display(Name = "Dueño")]
         public Duenio Duenio { get; set; }
+
     }
 }

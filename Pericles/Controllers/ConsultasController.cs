@@ -20,10 +20,24 @@ namespace Pericles.Controllers
         }
 
         // GET: Consultas
-        public async Task<IActionResult> Index()
+        /*public async Task<IActionResult> Index()
         {
             var periclesContext = _context.consultas.Include(c => c.Mascota).Include(c => c.Veterinario);
             return View(await periclesContext.ToListAsync());
+        }*/
+
+        public async Task<IActionResult> Index(string searchString)
+        {
+            ViewData["obtenerMascotas"] = searchString;
+
+            var mascota = from m in _context.consultas.Include(c => c.Mascota).Include(c => c.Veterinario) select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                mascota = mascota.Where(s => s.Mascota.Nombre.Contains(searchString));
+            }
+
+            return View(await mascota.AsNoTracking().ToListAsync());
         }
 
         // GET: Consultas/Details/5

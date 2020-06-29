@@ -185,3 +185,4 @@ D:\Proyectos Visual Studio\Pericles\Pericles\obj\Debug\netcoreapp3.1\Razor\Views
 D:\Proyectos Visual Studio\Pericles\Pericles\obj\Debug\netcoreapp3.1\Razor\Views\Veterinarios\Details.cshtml.g.cs
 D:\Proyectos Visual Studio\Pericles\Pericles\obj\Debug\netcoreapp3.1\Razor\Views\Veterinarios\Edit.cshtml.g.cs
 D:\Proyectos Visual Studio\Pericles\Pericles\obj\Debug\netcoreapp3.1\Razor\Views\Veterinarios\Index.cshtml.g.cs
+D:\Proyectos Visual Studio\Pericles\Pericles\obj\Debug\netcoreapp3.1\Razor\Views\Nosotros\Index.cshtml.g.cs

@@ -9,6 +9,14 @@
 <p>
     <a asp-action="Create">Alta consulta</a>
 </p>
+
+<form method="get" asp-action="Index">
+    <p style="flex-direction:row">
+        Buscar mascota por nombre: <input type="search" class="form-control mr-sm-2" style="width:250px;margin-bottom:15px" placeholder="Nombre de mascota" value="@ViewData["obtenerMascotas"]" name="searchString">
+        <input class="btn btn-primary" type="submit" value="Buscar" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>

@@ -9,6 +9,14 @@
 <p>
     <a asp-action="Create">Alta mascota</a>
 </p>
+
+<form asp-controller="Mascotas" asp-action="Index">
+    <p>
+        Buscar mascota por nombre:: <input type="text" name="SearchString" class="form-control mr-sm-2" placeholder="Nombre de mascota" style="width:250px;margin-bottom:15px">
+        <input type="submit" value="Buscar" class="btn btn-primary" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>

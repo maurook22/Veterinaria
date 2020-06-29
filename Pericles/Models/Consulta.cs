@@ -17,6 +17,7 @@ namespace Pericles.Models
         public DateTime Fecha { get; set; }
 
         [Required]
+        [Display(Name = "Diagnóstico")]
         public string Diagnostico { get; set; }
 
         [Required]

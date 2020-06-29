@@ -20,6 +20,7 @@ namespace Pericles.Models
         public string Apellido { get; set; }
 
         [Required]
+        [Display(Name = "Dirección")]
         public string Direccion { get; set; }
 
         [Required]
@@ -28,9 +29,11 @@ namespace Pericles.Models
 
         [Required]
         [MaxLength(10)]
+        [Display(Name = "Matrícula")]
         public string Matricula { get; set; }
 
         [Required]
+        [Display(Name = "Teléfono")]
         public int Telefono { get; set; }
     }
 }

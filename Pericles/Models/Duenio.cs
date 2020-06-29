@@ -20,12 +20,14 @@ namespace Pericles.Models
         public string Apellido { get; set; }
 
         [Required]
+        [Display(Name = "Dirección")]
         public string Direccion { get; set; }
 
         [Required]
         public int Dni { get; set; }
 
         [Required]
+        [Display(Name = "Teléfono")]
         public string Telefono { get; set; }
 
         [Required]

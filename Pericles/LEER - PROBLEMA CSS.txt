@@ -1,0 +1,3 @@
+El problema con implementar nuestras clases de css lo tuvimos en View/Home/Index, en esta vista se puede ver la lista con cada elemento con su etiqueta style y mas abajo la imagen tambien.
+Asi pudimos agregar nuestros estilos.
+Probamos creando nuestro css "estilos.css" e intentamos tambien con el que viene por default "site.css" pero no hubo caso.

@@ -20,10 +20,17 @@ namespace Pericles.Controllers
         }
 
         // GET: Mascotas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var periclesContext = _context.mascotas.Include(m => m.Duenio);
-            return View(await periclesContext.ToListAsync());
+            var mascotas = from m in _context.mascotas
+                           select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                mascotas = mascotas.Where(s => s.Nombre.Contains(searchString));
+            }
+
+            return View(await mascotas.ToListAsync());
         }
 
         // GET: Mascotas/Details/5
